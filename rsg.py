@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+==========================
 Ransomware Simulation Tool
 ==========================
 
@@ -7,12 +8,9 @@ An educational tool designed to simulate ransomware behavior in a controlled env
 This tool demonstrates how ransomware operates by encrypting files and creating ransom notes,
 while providing safe decryption capabilities for learning purposes.
 
-Author: Network Security Course Project
-Date: August 2025
-Version: 1.0
-
 WARNING: This tool is for educational use only in lab environments.
 DO NOT use on production systems or personal files.
+
 """
 
 import os
@@ -559,7 +557,7 @@ def get_encryption_method():
         tuple: (method_name, requires_key)
     """
     print("\nSelect encryption method:")
-    print("1. Rename only (safest - just changes file extensions)")
+    print("1. Rename only (change file extensions)")
     print("2. XOR cipher (reversible encryption)")
     print("3. AES encryption (strong encryption)")
     
@@ -818,4 +816,5 @@ def main():
         logging.info("="*60)
 
 if __name__ == "__main__":
+
     main()
