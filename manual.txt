@@ -1,19 +1,16 @@
-========================================
 RANSOMWARE SIMULATION TOOL - USER MANUAL
-========================================
 
 1. INTRODUCTION
 
-The Ransomware Simulation Tool is an educational software designed to demonstrate how ransomware operates in a controlled environment. This tool helps students and cybersecurity professionals understand ransomware behavior, encryption techniques, and recovery processes without causing actual harm to systems.
+The Ransomware Simulator Generator is an educational tool designed to demonstrate how ransomware operates in a controlled environment.
 
 Key Features:
-- Multiple encryption methods (rename-only, XOR, AES)
+- Multiple encryption methods (RENAME, XOR, AES)
 - Safe file processing with built-in protections
-- Comprehensive logging and audit trails
+- Recording all operations in the log file
 - Educational ransom note generation
 - Complete file recovery capabilities
 - Error handling for protected files
-
 
 2. SAFETY AND LEGAL CONSIDERATIONS
 
@@ -33,12 +30,11 @@ AUTHORIZED USE ONLY:
 
 Legal Notice: Users are fully responsible for ensuring appropriate use. Misuse of this tool may violate local, state, or federal laws.
 
-
 3. SYSTEM REQUIREMENTS
 
 Operating System:
 - Windows 10 or later
-- Linux (Ubuntu 18.04+ or equivalent)
+- Kali Linux
 - macOS 10.14 or later
 
 Software Requirements:
@@ -56,7 +52,6 @@ Hardware Requirements:
 - 100MB free disk space
 - Standard file system permissions
 
-
 4. INSTALLATION AND SETUP
 
 Step 1: Install Python Dependencies
@@ -66,18 +61,17 @@ Open command prompt or terminal and run:
 Step 2: Download Tool Files
 Ensure you have these files in your working directory:
 - rsg.py (main application)
-- test_setup.py (test environment creator)
-- User_Manual.txt (this manual)
+- test.py (test environment creator)
+- manual.txt (this manual)
 
 Step 3: Create Test Environment
 Run the test setup script:
-   python test_setup.py
+   python test.py
 
 Select option 1 to create a test environment with sample files.
 
 Step 4: Verify Installation
 The tool will create a "ransomware_test" directory with various file types for testing.
-
 
 5. USING THE TOOL
 
@@ -92,7 +86,7 @@ Operation Modes:
 
 ENCRYPTION MODE (Simulate Attack):
 1. Select option 1 when prompted
-2. Choose encryption method (rename/XOR/AES)
+2. Choose encryption method (RENAME/XOR/AES)
 3. Enter target directory path
 4. Review file count and confirm operation
 5. Save encryption key if prompted
@@ -110,6 +104,7 @@ Directory Selection:
 - Use absolute paths (e.g., C:\ransomware_test)
 - Avoid system directories
 - Recommended: Use test directories with "test", "lab", or "demo" in the name
+
 
 
 
